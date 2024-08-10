@@ -1,0 +1,70 @@
+:root{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    /* line-height: 1.5; */
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #22092C;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --main-bg-color: #BE3144;
+    --main-block-color: #872341;
+    --highlight-color:#F0D641;
+    --text-color:#fff;
+    --audio-color: #F05941;
+    --img--br-color: #f058412d;
+}
+
+
+.playlist-song-info{
+    background: var(--main-block-color);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+}
+.track{
+    width: 90%;
+}
+.img{
+    width: 60px;
+    border: solid 6px var(--img--br-color);
+    border-radius: 5px;
+}
+.playlist-song-info:hover {
+    border-color: var(--highlight-color);
+    border-width: 2px;
+}
+.song-info{
+    display: flex;
+    flex-direction: column;
+   
+    text-align: left;
+    gap: 0;
+    border-left: 1px solid #fff;
+  
+}
+.song-info h3{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+.artist{
+    color: var(--highlight-color);
+    width: 100%;
+}
+.song-info span{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.active{
+    border: 2px solid var(--highlight-color);
+}
